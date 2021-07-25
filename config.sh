@@ -16,7 +16,7 @@ export branch="11"
 export bacon="bacon"
 export buildtype=""
 export clean="installclean"
-export generate_incremental="true"
+export generate_incremental=""
 export upload_recovery=""
 
 export ccache="true"

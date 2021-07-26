@@ -16,13 +16,13 @@ jobs:
         sudo apt-get install git
     - name: Upstream branches
       run: |
-        git config --global user.name "${GITHUB_USER}"
-        git config --global user.email "${GITHUB_EMAIL}"
-        git clone https://"${GITHUB_USER}":"${GITHUB_TOKEN}"@github.com/"${GITHUB_USER}"/releases.git
+        git config --global user.name "${KIAM_USER}"
+        git config --global user.email "${KIAM_EMAIL}"
+        git clone https://"${KIAM_USER}":"${KIAM_TOKEN}"@github.com/"${KIAM_USER}"/releases.git
         cd releases
-        function upstream() { for var in cedric-los18 montana-los18 montana-los18-4.9; do git checkout $var; git rebase master; git push -f; done; git checkout master; }
+        function upstream() { for var in sakura-vayu; do git checkout $var; git rebase master; git push -f; done; git checkout master; }
         upstream
       env:
-        GITHUB_EMAIL: ${{ secrets.GITHUB_EMAIL }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_KEY }}
-        GITHUB_USER: ${{ secrets.GITHUB_USER }}
+        KIAM_EMAIL: ${{ secrets.KIAM_EMAIL }}
+        KIAM_TOKEN: ${{ secrets.KIAM_KEY }}
+        KIAM_USER: ${{ secrets.KIAM_USER }}

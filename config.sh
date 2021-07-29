@@ -7,7 +7,7 @@ export device="vayu"
 
 export ROM="Sakura"
 export ROM_DIR="$WORKSPACE/../Sakura-Android-11"
-export ROM_VERSION="5.1"
+export ROM_VERSION="5.2"
 export official="false"
 export local_manifest_url="https://raw.githubusercontent.com/kiam001/relaeses_manifests/main/sakura-vayu.xml"
 export manifest_url="https://github.com/ProjectSakura/android"

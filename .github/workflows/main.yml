@@ -20,7 +20,7 @@ jobs:
         git config --global user.email "${KIAM_EMAIL}"
         git clone https://"${KIAM_USER}":"${KIAM_TOKEN}"@github.com/"${KIAM_USER}"/releases.git
         cd releases
-        function upstream() { for var in sakura-vayu; do git checkout $var; git rebase master; git push -f; done; git checkout master; }
+        function upstream() { for var in sakura-vayu sakura-PL2 Arrow-cedric; do git checkout $var; git rebase master; git push -f; done; git checkout master; }
         upstream
       env:
         KIAM_EMAIL: ${{ secrets.KIAM_EMAIL }}

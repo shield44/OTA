@@ -15,7 +15,7 @@ export rom_vendor_name="lineage"
 export branch="11"
 export bacon="bacon"
 export buildtype="user"
-export clean="clean"
+export clean="installclean"
 export generate_incremental="false"
 export upload_recovery="false"
 

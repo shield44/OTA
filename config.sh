@@ -19,6 +19,8 @@ export clean="installclean"
 export generate_incremental="false"
 export upload_recovery="false"
 
+export SAKURA_OFFICIAL=true
+
 export ccache="true"
 export ccache_size="100"
 
